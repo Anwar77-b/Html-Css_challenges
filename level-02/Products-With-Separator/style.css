@@ -1,112 +1,112 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background: #0e0e0e;
-    font-family: Arial, Helvetica, sans-serif;
+  background: #0e0e0e;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .parent {
-    width: 965px;
-    background-color: #20bfa9;
-    margin: 90px auto;
-    padding: 35px;
-    display: flex;
-    justify-content: space-between;
+  width: 965px;
+  background-color: #20bfa9;
+  margin: 90px auto;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 .parent article {
-    width: 40%;
-    height: 350px;
-    background-color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
+  width: 40%;
+  height: 350px;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 }
 .parent article h2 {
-    width: 100%;
-    height: 33%;
-    background-color: #282828;
-    padding: 20px 0 60px 0;
-    margin: 0;
-    color: #fff;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+  width: 100%;
+  height: 33%;
+  background-color: #282828;
+  padding: 20px 0 60px 0;
+  margin: 0;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .parent article h2 span {
-    color: #4caf4c;
+  color: #4caf4c;
 }
 .parent article .features {
-    width: 75%;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 13px 5px #28282813;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
+  width: 75%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 5px #28282813;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
 }
 .parent article .features h3 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .parent article .features p {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 15px;
-    text-align: start;
-    padding-left: 50px;
-    position: relative;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: start;
+  padding-left: 50px;
+  position: relative;
 }
 .parent article .features p:last-of-type {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .parent article .features p::before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #f73859;
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f73859;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
 .parent article .features span {
-    display: block;
-    width: fit-content;
-    padding: 10px 30px;
-    color: #fff;
-    border-radius: 10px;
-    background-color: #f73859;
-    margin-bottom: 20px;
+  display: block;
+  width: fit-content;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #f73859;
+  margin-bottom: 20px;
 }
 .parent .one::before {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: #fff;
-    position: absolute;
-    right: -90px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: -90px;
 }
 .parent .one::after {
-    content: "Or";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    font-weight: bold;
-    border-radius: 50%;
-    background-color: #fff;
-    position: absolute;
-    right: -90px;
-    top: 50%;
-    transform: translate(50%, -50%);
+  content: "Or";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
