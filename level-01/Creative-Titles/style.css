@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+  padding: 20px;
+}
+div h3 {
+  padding: 25px 0;
+  position: relative;
+}
+div .one {
+  color: #2c6ccf;
+}
+div .two {
+  color: #cf2c2c;
+}
+div .three {
+  color: #309e0e;
+}
+div .four {
+  color: #cd661a;
+}
+div h3::before {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+div .one::before {
+  background-image: linear-gradient(to right, #2c6ccf 50%, #ccc 50%, #ccc 100%);
+}
+div .two::before {
+  background-image: linear-gradient(to right, #cf2c2c 50%, #ccc 50%, #ccc 100%);
+}
+div .three::before {
+  background-image: linear-gradient(to right, #309e0e 50%, #ccc 50%, #ccc 100%);
+}
+div .four::before {
+  background-image: linear-gradient(to right, #cd661a 50%, #ccc 50%, #ccc 100%);
+}
+div .one::after {
+  background-color: #2c6ccf;
+  border-color: #2c6ccf;
+}
+div .two::after {
+  background-color: #cf2c2c;
+  border-color: #cf2c2c;
+}
+div .three::after {
+  background-color: #309e0e;
+  border-color: #309e0e;
+}
+div .four::after {
+  background-color: #cd661a;
+  border-color: #cd661a;
+}
+.circle .circle::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.box .box::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+.tria-up .tria-up::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border: 15px solid;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  left: -2px;
+  bottom: 0;
+}
+.tria-down .tria-down::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border: 15px solid;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: absolute;
+  left: -2px;
+  bottom: -28px;
+}

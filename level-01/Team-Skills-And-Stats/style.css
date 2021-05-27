@@ -1,0 +1,185 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.page {
+  width: 100%;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+}
+header .container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+header .links {
+  display: flex;
+}
+header .container .links li,
+header .container .links li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.servs {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  text-align: center;
+}
+.servs h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.servs h2 span {
+  color: #17aff4;
+}
+.servs p {
+  line-height: 1.6;
+}
+
+.proprs .container {
+  display: flex;
+  padding: 50px 0;
+}
+.proprs .pr {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.proprs h3 {
+  width: 100%;
+  margin: 10px 0;
+}
+.proprs .pr img {
+  width: 75px;
+  height: 75px;
+}
+.proprs .pr p {
+  color: #777;
+}
+
+.about {
+  background-color: #f6f6f6;
+}
+.about .container {
+  display: flex;
+  padding: 65px 0;
+}
+.about img {
+  max-width: 400px;
+  max-height: 240px;
+}
+.about .text {
+  padding: 0 20px;
+}
+.about .text h2 {
+  margin-bottom: 20px;
+}
+.about .text p {
+  line-height: 1.8;
+}
+
+.team .container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.team .container div {
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+.team .container div p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.team .container .services {
+  background-color: #b33939;
+}
+.team .container .designs {
+  background-color: #227093;
+}
+.team .container .clients {
+  background-color: #218c74;
+}
+
+.skills {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.skills h2 {
+  margin-bottom: 20px;
+}
+.html,
+.css,
+.js,
+.php,
+.py {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .progress.bar {
+  display: block;
+  width: 87.5%;
+  background-color: #fff;
+}
+.skills .progress.done {
+  padding: 10px;
+  background-color: #03a9f4;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.html .progress.done {
+  width: 60%;
+}
+.css .progress.done {
+  width: 70%;
+}
+.js .progress.done {
+  width: 80%;
+}
+.php .progress.done {
+  width: 65%;
+}
+.py .progress.done {
+  width: 90%;
+}
+
+footer {
+  background-color: #333;
+}
+footer .container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+footer p a {
+  text-decoration: none;
+  color: #03a9f4;
+}

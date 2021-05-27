@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent span {
+  display: block;
+  width: 200px;
+  padding: 20px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.parent span::before {
+  content: "This is tooltip content";
+  display: block;
+  width: 250px;
+  padding: 20px;
+  background-color: #111;
+  font-size: 1.25rem;
+  color: #fff;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+.parent span::after {
+  content: "";
+  display: block;
+  border: 10px solid;
+  border-color: #111 transparent transparent transparent;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 1s;
+}
+.parent span:hover {
+  overflow: visible;
+}
+.parent span:hover::before,
+.parent span:hover:after {
+  opacity: 1;
+}
