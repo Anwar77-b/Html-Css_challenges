@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #111;
+  width: 100%;
+  padding: 20px 20px;
+}
+header form {
+  display: flex;
+  /* justify-content: space-between; */
+
+  align-items: center;
+}
+header .field {
+  height: 37px;
+  margin-right: 10px;
+}
+header .field.one,
+header .field.four,
+header .field.five {
+  width: 25%;
+}
+header .field input,
+header .field select {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  border: 0;
+}
+header .field input[type="submit"] {
+  background-color: #0eaaa6;
+  color: #fff;
+  cursor: pointer;
+}
+header .field.four input[type="text"],
+header .field.five input[type="text"] {
+  padding-left: 50px;
+  position: relative;
+}
+header .field.four,
+header .field.five {
+  position: relative;
+}
+header .field.four::before,
+header .field.five::before {
+  content: "$";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgb(167, 167, 167);
+  width: 40px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  z-index: 2;
+}
+header .field select {
+  padding: 10px 20px;
+  color: #757575;
+}
+
+main {
+  color: #fff;
+  background-color: #0eaaa6;
+  padding: 30px;
+  text-align: center;
+}
+main p:first-child {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+main p:last-child {
+  font-style: italic;
+}
+
+@media (max-width:568px) {
+  header form {
+    display: block;
+  }
+  header .field {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  header .field.one, header .field.four, header .field.five {
+    width: 100%;
+}
+}
