@@ -1,97 +1,88 @@
+:root {
+  --color-one: #fc5103;
+  --color-two: #333333;
+  --color-three: #fafafa;
+  --color-four: #f7f7f7;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-header {
-  background-color: #111;
-  width: 100%;
-  padding: 20px 20px;
-}
-header form {
-  display: flex;
-  /* justify-content: space-between; */
-
-  align-items: center;
-}
-header .field {
-  height: 37px;
-  margin-right: 10px;
-}
-header .field.one,
-header .field.four,
-header .field.five {
-  width: 25%;
-}
-header .field input,
-header .field select {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 2px;
-  border: 0;
-}
-header .field input[type="submit"] {
-  background-color: #0eaaa6;
-  color: #fff;
-  cursor: pointer;
-}
-header .field.four input[type="text"],
-header .field.five input[type="text"] {
-  padding-left: 50px;
-  position: relative;
-}
-header .field.four,
-header .field.five {
-  position: relative;
-}
-header .field.four::before,
-header .field.five::before {
-  content: "$";
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid rgb(167, 167, 167);
-  width: 40px;
-  height: 37px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #f7f7f7;
-  z-index: 2;
+  background-color: #fff;
 }
-header .field select {
-  padding: 10px 20px;
-  color: #757575;
+table {
+  width: 1024px;
+  border-spacing: 1px 0;
 }
-
-main {
-  color: #fff;
-  background-color: #0eaaa6;
-  padding: 30px;
+table td {
   text-align: center;
 }
-main p:first-child {
-  font-size: 2rem;
-  margin-bottom: 15px;
+thead th {
+  background-color: var(--color-one);
+  color: #fff;
+  padding: 1.5rem;
+  font-weight: normal;
 }
-main p:last-child {
-  font-style: italic;
+tbody :is(tr:first-child, tr:last-child) td {
+  padding: 1rem;
 }
-
-@media (max-width:568px) {
-  header form {
-    display: block;
-  }
-  header .field {
-    margin-bottom: 1em;
-    width: 100%;
-  }
-  header .field.one, header .field.four, header .field.five {
-    width: 100%;
+tbody :is(tr:not(:first-child):not(:last-child)) td {
+  padding: 1rem;
 }
+tbody :is(tr:not(:first-child):not(:last-child)) td:first-child {
+  color: #a6a6a6;
+  font-weight: 600;
+}
+tbody tr:nth-child(odd) td {
+  background-color: var(--color-three);
+}
+tbody tr:nth-child(even) td {
+  background-color: var(--color-four);
+}
+tbody tr:first-child td span {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-one);
+  position: relative;
+}
+tbody tr:first-child td span::before {
+  content: "$";
+  color: #666;
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  font-size: initial;
+}
+tbody tr:first-child td span::after {
+  content: "99";
+  color: #666;
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  font-size: initial;
+}
+tbody tr:first-child td sub {
+  color: #999;
+  font-weight: 600;
+  margin-left: 5px;
+}
+tbody tr:last-child span {
+  display: block;
+  width: 5rem;
+  border-radius: 7.5px;
+  padding: 0.5rem;
+  background-color: var(--color-two);
+  color: #fff;
+  font-weight: 600;
+  margin: auto;
+}
+tbody tr:last-child td:nth-child(4) span {
+  background-color: var(--color-one);
 }

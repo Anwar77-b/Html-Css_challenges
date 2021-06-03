@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #202020;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 500px;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #f2eff6;
+}
+.top {
+  width: 100%;
+}
+.top a {
+  direction: rtl;
+  text-decoration: none;
+  display: block;
+  color: #0a79fd;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+.top input {
+  width: 100%;
+  background-color: #e3e2e8;
+  border: 0;
+  color: #69696b;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+}
+.middle {
+  width: 100%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1em;
+}
+.middle section {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.middle div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.middle span {
+  display: block;
+}
+.middle div span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.middle div + span {
+  color: #858585;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.middle i,
+.bottom i {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle .today i {
+  background-color: #0179ff;
+}
+.middle .scheduled i {
+  background-color: #f89415;
+}
+.middle .all i {
+  background-color: #5a636c;
+}
+.middle .flagged i {
+  background-color: #ff4a2a;
+}
+.bottom h2 {
+  margin-bottom: 0.5rem;
+}
+.bottom div {
+  background-color: #fff;
+  padding: 15px;
+  display: inline-flex;
+  width: 100%;
+  font-size: 1.25rem;
+}
+.bottom .one {
+  border-radius: 15px 15px 0 0;
+}
+.bottom .two {
+  border-radius: 0 0 15px 15px;
+}
+.bottom div p {
+  width: calc(100% - 60px);
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.bottom .one p::before {
+  content: "";
+  display: block;
+  width: calc(100% + 25px);
+  height: 2px;
+  background: #f2eff6;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+.bottom p span:last-child {
+  color: #888888;
+}
+.bottom .one i {
+  width: 40px;
+  height: 40px;
+  background: #19b456;
+}
+.bottom .two i {
+  width: 40px;
+  height: 40px;
+  background: #ffc700;
+}
