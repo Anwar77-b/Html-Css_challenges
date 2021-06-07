@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Orders List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h3>Order List</h3>
+      <form class="search-fields" action="" method="GET">
+        <div class="filed one">
+          <input type="search" placeholder="Invoice Search" />
+        </div>
+        <div class="filed two">
+          <input type="search" placeholder="Search by Title" />
+        </div>
+        <div class="filed three">
+          <input type="search" placeholder="Search by Phone" />
+        </div>
+        <div class="submit-botton">
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div class="list-table">
+        <div class="titles">
+          <input type="checkbox" id="inv" />
+          <label for="inv">Invoice</label>
+          <p>Image</p>
+          <p><span>Menu</span></p>
+          <p><span>Customer Name</span></p>
+          <p>Quantity</p>
+          <p><span>Amount</span></p>
+          <p><span>Order Status</span></p>
+          <p><span>Phone</span></p>
+        </div>
+        <div class="order one">
+          <input type="checkbox" id="order-1150" />
+          <label for="order-1150"># 1150</label>
+          <picture>
+            <img src="images/pizza-01.jpg" alt="" />
+          </picture>
+          <p>Cheese Pizza</p>
+          <p>Mark Willy</p>
+          <p>
+            <span>05</span>
+          </p>
+          <p>$ 2.590</p>
+          <p>
+            <span class="conf">Confirmed</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+        <div class="order two">
+          <input type="checkbox" id="order-1151" />
+          <label for="order-1151"># 1151</label>
+          <picture>
+            <img src="images/Burger-01.jpg" alt="" />
+          </picture>
+          <p>Big Burger</p>
+          <p>Mike White</p>
+          <p>
+            <span>03</span>
+          </p>
+          <p>$ 1.590</p>
+          <p>
+            <span class="pend">Pending</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+        <div class="order three">
+          <input type="checkbox" id="order-1152" />
+          <label for="order-1152"># 1152</label>
+          <picture>
+            <img src="images/pasta-03.jpg" alt="" />
+          </picture>
+          <p>Green Pasta</p>
+          <p>Mike White</p>
+          <p>
+            <span>05</span>
+          </p>
+          <p>$ 2.590</p>
+          <p>
+            <span class="conf">Confirmed</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+        <div class="order four">
+          <input type="checkbox" id="order-1153" />
+          <label for="order-1153"># 1153</label>
+          <picture>
+            <img src="images/pizza-02.jpg" alt="" />
+          </picture>
+          <p>Regular Pizza</p>
+          <p>Mark Willy</p>
+          <p>
+            <span>05</span>
+          </p>
+          <p>$ 2.590</p>
+          <p>
+            <span class="conf">Confirmed</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+        <div class="order five">
+          <input type="checkbox" id="order-1154" />
+          <label for="order-1154"># 1154</label>
+          <picture>
+            <img src="images/Burger-01.jpg" alt="" />
+          </picture>
+          <p>Big Burger</p>
+          <p>Walter White</p>
+          <p>
+            <span>03</span>
+          </p>
+          <p>$ 1.590</p>
+          <p>
+            <span class="pend">Pending</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+        <div class="order six">
+          <input type="checkbox" id="order-1155" />
+          <label for="order-1155"># 1155</label>
+          <picture>
+            <img src="images/pasta-02.jpg" alt="" />
+          </picture>
+          <p>Chicken Pasta</p>
+          <p>Poly Gray</p>
+          <p>
+            <span>05</span>
+          </p>
+          <p>$ 2.590</p>
+          <p>
+            <span class="conf">Confirmed</span>
+          </p>
+          <p>+123 985047</p>
+        </div>
+      </div>
+      <div class="list-info">
+        <p>Showing 1-30 / 150 Resultes</p>
+        <p>
+          <span class="go-prev">Previous</span>
+          <span class="p-1">1</span>
+          <span class="p-2">2</span>
+          <span class="p-3">3</span>
+          <span class="p-4">4</span>
+          <span class="go-next">Next</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
